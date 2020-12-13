@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><title>TOMATO</title></head>
+<body style="background-color: rgba(179, 189, 44, 0.575);">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+      
+                <h1 align="center" >Tomato Leaf Disease Prediction</h1>
+                <br>
+                <br>
+                <h3 align="center">About</h3>
+                <p align = "center">The tomato crop is an important staple in the Indian market with high commercial value and is produced in large quantities. Diseases are detrimental to the plant's health which in turn affects its growth. To ensure minimal losses to the cultivated crop, it is crucial to supervise its growth.</p>
+                <form align="center" action="/" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <br>
+                        <label>Select image</label>
+                        <div class="custom-file">
+                        <input type="file" class="custom-file-input" name="image" accept=".png, .jpg, .jpeg" id="image">
+                        <br>
+                        <br>
+                        <br>
+                        <label class="custom-file-label" for="image">Check Prediction...</label>
+                        </div>
+                    </div>
+            
+                    <button type="submit" class="btn btn-primary">Click</button>
+                    
+                    <h2>Prediction: {{prediction}}</h3>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
